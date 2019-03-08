@@ -5,6 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20190308190413_CreateRelationship.cs" />
+    <Compile Remove="Migrations\20190308190413_CreateRelationship.Designer.cs" />
+    <Compile Remove="Migrations\20190308193851_CreateRelationship.cs" />
+    <Compile Remove="Migrations\20190308193851_CreateRelationship.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\Images\" />
   </ItemGroup>
 

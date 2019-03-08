@@ -47,7 +47,7 @@ namespace AlbumCollection
                     AlbumId = 3,
                     Name = "Love Scars 3",
                     ArtistName = "Trippie Redd",
-                    ImgPath = "/Images/LoveScars3"
+                    ImgPath = "/Images/LoveScars3.png"
                 });
 
             modelBuilder.Entity<Song>().HasData(

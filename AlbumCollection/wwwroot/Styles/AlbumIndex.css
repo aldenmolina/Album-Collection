@@ -1,2 +1,43 @@
 ﻿body {
+    background: #2c2d2d;
+    color: #f0f0f0;
+    font-family: "Special Elite", serif;
+}
+
+h1 {
+    font-family: "Luckiest Guy", serif;
+    font-size: 3rem;
+}
+
+#list-container {
+    margin: 2rem 10rem;
+}
+
+.album-list {
+    list-style: none;
+}
+
+.album-container {
+    display: flex;
+    margin: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.3);
+}
+
+.album-container img {
+    max-height: 8rem;
+    margin: 0.5rem;
+}
+
+.album-info {
+    margin: 0.5rem;
+}
+
+.album-info a {
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+.album-info a:hover {
+    text-decoration: underline;
 }

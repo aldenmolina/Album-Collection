@@ -1,0 +1,31 @@
+﻿@model IEnumerable<AlbumCollection.Models.Album>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link rel="stylesheet" href="~/Styles/AlbumIndex.css" />
+</head>
+<body>
+
+    <!-- Section: Album List -->    
+    <section id="list-container">
+        <h1>My Albums</h1>
+        <ul class="album-list">
+            @foreach (var album in Model)
+            {
+                <li class="album-container">                  
+                        <img href="@album.ImgPath" />
+                        <h3>@album.Name</h3>
+                        <p>@album.ArtistName</p>                   
+                </li>
+            }
+        </ul>
+    </section>
+</body>
+</html>

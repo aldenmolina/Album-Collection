@@ -11,6 +11,15 @@ namespace AlbumCollection
     {
         public DbSet<Album> Albums { get; set; }
         public DbSet<Song> Songs { get; set; }
-            
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            var connectionString = "Server=(localdb)\\mssqllocaldb;Database=MovieReview;Trusted_Connection=True;";
+
+            optionsBuilder.UseSqlServer(connectionString)
+                          .UseLazyLoadingProxies();
+
+            base.OnConfiguring(optionsBuilder);
+        }
     }
 }

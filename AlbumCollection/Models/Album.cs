@@ -19,5 +19,7 @@ namespace AlbumCollection.Models
 
         [Display(Name = "Album Image URL:")]
         public string ImgPath { get; set; }
+
+        public virtual List<Song> Songs { get; set; }
     }
 }

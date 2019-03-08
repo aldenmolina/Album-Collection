@@ -11,7 +11,15 @@ namespace AlbumCollection.Models
         [Key]
         public int SongId { get; set; }
 
-        [Display(Name = "Song Name")]
+        [Display(Name = "Album Title:")]
+        public int AlbumId { get; set; }
+
+        public virtual Album Album { get; set; }
+
+        [Display(Name = "Song Name:")]
         public string Name { get; set; }
+
+        [Display(Name = "Run Time:")]
+        public string RunTime { get; set; }
     }
 }

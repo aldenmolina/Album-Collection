@@ -11,11 +11,13 @@ namespace AlbumCollection.Models
         [Key]
         public int AlbumId { get; set; }
         
-        [Display(Name = "Album Title")]
+        [Display(Name = "Album Title:")]
         public string Name { get; set; }
 
-        [Display(Name = "Artist Name")]
+        [Display(Name = "Artist Name:")]
         public string ArtistName { get; set; }
 
+        [Display(Name = "Album Image URL:")]
+        public string ImgPath { get; set; }
     }
 }

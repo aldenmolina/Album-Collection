@@ -21,5 +21,37 @@ namespace AlbumCollection
 
             base.OnConfiguring(optionsBuilder);
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Album>().HasData(
+
+                new Album()
+                {
+                    AlbumId = 1,
+                    Name = "On Letting Go",
+                    ArtistName = "Circa Survive",
+                    ImgPath = "/Images/OnLettingGo.jpg"
+                },
+
+                new Album()
+                {
+                    AlbumId = 2,
+                    Name = "Downtown Battle Mountain II",
+                    ArtistName = "Dance Gavin Dance",
+                    ImgPath = "/Images/DowntownBattleMountain2.jpg"
+                },
+
+                new Album()
+                {
+                    AlbumId = 3,
+                    Name = "Love Scars 3",
+                    ArtistName = "Trippie Redd",
+                    ImgPath = "/Images/LoveScars3"
+                }
+                
+                );
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }

@@ -13,6 +13,32 @@ h1 {
     margin: 2rem 10rem;
 }
 
+.album-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.create-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: 0.3s ease;
+}
+
+.create-link a {
+    text-decoration: none;
+    color: white;
+    background: orange;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    padding: 0.5rem;  
+}
+
+.create-link:hover {
+    margin-right: 0.2rem;
+    transition: 0.3s ease;
+}
+
 .album-list {
     list-style: none;
 }

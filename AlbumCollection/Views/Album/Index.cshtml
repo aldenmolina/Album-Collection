@@ -16,7 +16,12 @@
 
     <!-- Section: Album List -->
     <section id="list-container">
-        <h1>My Albums</h1>
+        <div class="album-header">
+            <h1>My Albums</h1>
+            <div class="create-link">
+                <a href="/Album/Create">Add Album</a>
+            </div>
+        </div>
         <ul class="album-list">
             @foreach (var album in Model)
             {

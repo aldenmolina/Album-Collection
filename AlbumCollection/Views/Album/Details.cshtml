@@ -1,0 +1,40 @@
+﻿@model AlbumCollection.Models.Album
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+    <link rel="stylesheet" href="~/Styles/AlbumDetails.css" />
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Special+Elite" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Section : Details-->
+    <section id="details-container">
+        <h1>Album Details</h1>
+        <div class="album-container">
+            <div class="album-header">
+                <img src="@Model.ImgPath" />
+                <div class="album-info">
+                    <h3>@Model.Name</h3>
+                    <p>@Model.ArtistName</p>
+                </div>
+            </div>
+            <ul class="song-list">
+                @foreach (var song in Model.Songs)
+                {
+                    <li class="song-container">
+                        <p>@song.Name</p>
+                        <p>@song.RunTime</p>
+                    </li>
+                }
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

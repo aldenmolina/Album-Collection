@@ -1,0 +1,45 @@
+﻿body {
+    background: #2c2d2d;
+    color: #f0f0f0;
+    font-family: "Special Elite", serif;
+}
+
+h1 {
+    font-family: "Luckiest Guy", serif;
+    font-size: 3rem;
+}
+
+#details-container {
+    margin: 5rem 10rem;
+}
+
+.album-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.album-header {
+    display: flex;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    padding-left: 2rem;
+}
+
+.album-header img {
+    max-height: 8rem;
+    margin: 0.5rem;
+}
+
+.album-info {
+    margin-left: 1rem;
+}
+
+.song-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.song-container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dotted rgba(255,255,255,0.3);
+}

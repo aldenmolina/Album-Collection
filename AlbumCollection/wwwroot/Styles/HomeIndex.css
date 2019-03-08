@@ -1,0 +1,61 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy|Special+Elite');
+
+body {
+    background: url("/Images/Background.jpg") no-repeat center center/cover;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+
+#header-container {
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    align-content: center;
+}
+
+.intro h1 {
+    font-family: "Luckiest Guy", serif;
+    color: white;
+    font-size: 5rem;
+    margin-bottom: 0;
+}
+
+.link {
+    align-self: flex-end;
+    transition: 0.3s ease;
+}
+
+.link:hover {
+    transition: 0.3s ease;
+    margin-right: 0.2rem;
+}
+
+.link a {
+    font-family: "Special Elite", serif;
+    text-decoration: none;
+    color: white;
+    background: orange;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    padding: 0.5rem;
+}
+
+.link i {
+    padding-right: 0.5rem;
+}
+
+
+
+
+

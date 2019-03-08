@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace AlbumCollection.Repositories
 {
-    public class SongRepository
+    public class SongRepository : ISongRepository
     {
         AlbumContext db;
         public SongRepository(AlbumContext db)
         {
             this.db = db;
         }
-
 
         public Song GetByID(int id)
         {

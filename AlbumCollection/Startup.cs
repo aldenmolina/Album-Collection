@@ -16,7 +16,8 @@ namespace AlbumCollection
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            services.AddDbContext<MovieContext>();
+            services.AddDbContext<AlbumContext>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -33,5 +33,17 @@ namespace AlbumCollection.Tests
 
             Assert.IsType<ViewResult>(result);
         }
+
+        [Fact]
+        public void Can_Create_Album()
+        {
+            var movieRepo = new AlbumRepository(null);
+            var underTest = new AlbumController(movieRepo);
+
+            var result = underTest.Create();
+
+            Assert.IsType<ViewResult>(result);
+
+        }
     }
 }

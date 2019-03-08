@@ -24,6 +24,13 @@ namespace AlbumCollection.Migrations
                 columns: new[] { "ImgPath", "Name" },
                 values: new object[] { "/Images/Juturna.jpg", "Juturna" });
 
+            migrationBuilder.UpdateData(
+                table: "Albums",
+                keyColumn: "AlbumId",
+                keyValue: 3,
+                column: "ImgPath",
+                value: "/Images/LoveScars3.png");
+
             migrationBuilder.InsertData(
                 table: "Songs",
                 columns: new[] { "SongId", "AlbumId", "Name", "RunTime" },
@@ -141,6 +148,13 @@ namespace AlbumCollection.Migrations
                 keyValue: 1,
                 columns: new[] { "ImgPath", "Name" },
                 values: new object[] { "/Images/OnLettingGo.jpg", "On Letting Go" });
+
+            migrationBuilder.UpdateData(
+                table: "Albums",
+                keyColumn: "AlbumId",
+                keyValue: 3,
+                column: "ImgPath",
+                value: "/Images/LoveScars3");
         }
     }
 }

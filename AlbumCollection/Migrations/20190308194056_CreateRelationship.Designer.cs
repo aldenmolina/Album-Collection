@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AlbumCollection.Migrations
 {
     [DbContext(typeof(AlbumContext))]
-    [Migration("20190308190413_CreateRelationship")]
+    [Migration("20190308194056_CreateRelationship")]
     partial class CreateRelationship
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -39,7 +39,7 @@ namespace AlbumCollection.Migrations
                     b.HasData(
                         new { AlbumId = 1, ArtistName = "Circa Survive", ImgPath = "/Images/Juturna.jpg", Name = "Juturna" },
                         new { AlbumId = 2, ArtistName = "Dance Gavin Dance", ImgPath = "/Images/DowntownBattleMountain2.jpg", Name = "Downtown Battle Mountain II" },
-                        new { AlbumId = 3, ArtistName = "Trippie Redd", ImgPath = "/Images/LoveScars3", Name = "Love Scars 3" }
+                        new { AlbumId = 3, ArtistName = "Trippie Redd", ImgPath = "/Images/LoveScars3.png", Name = "Love Scars 3" }
                     );
                 });
 

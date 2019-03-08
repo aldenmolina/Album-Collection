@@ -1,0 +1,34 @@
+﻿@model IEnumerable<AlbumCollection.Models.Album>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link rel="stylesheet" href="~/Styles/AlbumIndex.css" />
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Special+Elite" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Section: Album List -->
+    <section id="list-container">
+        <h1>My Albums</h1>
+        <ul class="album-list">
+            @foreach (var album in Model)
+            {
+                <li class="album-container">
+                    <img src="@album.ImgPath" />
+                    <div class="album-info">
+                        <a href="/Album/Details/@album.AlbumId"><h3>@album.Name</h3></a>
+                        <p>@album.ArtistName</p>
+                    </div>
+                </li>
+            }
+        </ul>
+    </section>
+</body>
+</html>

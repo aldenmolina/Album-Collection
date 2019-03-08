@@ -14,7 +14,6 @@ namespace AlbumCollection.Repositories
             this.db = db;
         }
 
-
         public Album GetByID(int id)
         {
             return db.Albums.Single(album => album.AlbumId == id);

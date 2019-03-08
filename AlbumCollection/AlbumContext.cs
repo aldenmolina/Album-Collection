@@ -50,7 +50,7 @@ namespace AlbumCollection
                     ImgPath = "/Images/LoveScars3"
                 });
 
-            modelBuilder.Entity<Album>().HasData(
+            modelBuilder.Entity<Song>().HasData(
 
                 new Song()
                 {

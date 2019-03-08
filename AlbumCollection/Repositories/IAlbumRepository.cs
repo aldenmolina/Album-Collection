@@ -10,5 +10,6 @@ namespace AlbumCollection.Repositories
     {
         IEnumerable<Album> GetAll();
         Album GetByID(int id);
+        void Create(Album album);
     }
 }

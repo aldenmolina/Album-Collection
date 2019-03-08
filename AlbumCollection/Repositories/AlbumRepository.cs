@@ -23,5 +23,11 @@ namespace AlbumCollection.Repositories
         {
             return db.Albums.ToList();
         }
+
+        public void Create(Album album)
+        {
+            db.Albums.Add(album);
+            db.SaveChanges();
+        }
     }
 }

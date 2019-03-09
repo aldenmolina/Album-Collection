@@ -1,3 +1,24 @@
 ﻿body {
+    background: #2c2d2d;
+    color: #f0f0f0;
+    font-family: "Special Elite", serif;
+}
+
+h1 {
+    font-family: "Luckiest Guy", serif;
+    font-size: 3rem;
+}
+
+a {
+    text-decoration: none;
     color: white;
+    margin: 0.5rem;U
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.form-group {
+    padding: 0.5rem;
 }

@@ -146,6 +146,54 @@ namespace AlbumCollection
                     AlbumId = 3,
                     Name = "Can't Love",
                     RunTime = "2:49"
+                },
+
+                new Song()
+                {
+                    SongId = 13,
+                    AlbumId = 1,
+                    Name = "The Glorious Nosebleed",
+                    RunTime = "3:12"
+                },
+
+                new Song()
+                {
+                    SongId = 14,
+                    AlbumId = 1,
+                    Name = "Meet Me in Montauk",
+                    RunTime = "14:39"
+                },
+
+                new Song()
+                {
+                    SongId = 15,
+                    AlbumId = 2,
+                    Name = "Swan Soup",
+                    RunTime = "4:01"
+                },
+
+                new Song()
+                {
+                    SongId = 16,
+                    AlbumId = 2,
+                    Name = "Pounce Bounce",
+                    RunTime = "2:26"
+                },
+
+                new Song()
+                {
+                    SongId = 17,
+                    AlbumId = 3,
+                    Name = "Topanga",
+                    RunTime = "3:35"
+                },
+
+                new Song()
+                {
+                    SongId = 18,
+                    AlbumId = 3,
+                    Name = "Love Scars 3",
+                    RunTime = "2:09"
                 });
 
             base.OnModelCreating(modelBuilder);

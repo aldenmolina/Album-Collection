@@ -9,6 +9,15 @@ h1 {
     font-size: 3rem;
 }
 
+.header-link a {
+    text-decoration: none;
+    color: white;
+}
+
+.header-link a:hover {
+    text-decoration: underline;
+}
+
 .create-link {
     transition: 0.3s ease;
 }

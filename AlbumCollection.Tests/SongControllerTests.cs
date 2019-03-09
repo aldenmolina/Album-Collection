@@ -13,10 +13,11 @@ namespace AlbumCollection.Tests
         [Fact]
         public void Can_Create_Song()
         {
+            int expectedId = 2;
             var songRepo = new SongRepository(null);
             var underTest = new SongController(songRepo);
 
-            var result = underTest.Create();
+            var result = underTest.Create(expectedId);
 
             Assert.IsType<ViewResult>(result);
 

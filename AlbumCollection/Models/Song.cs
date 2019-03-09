@@ -11,9 +11,7 @@ namespace AlbumCollection.Models
         [Key]
         public int SongId { get; set; }
 
-        [Display(Name = "Album Title:")]
         public int AlbumId { get; set; }
-
         public virtual Album Album { get; set; }
 
         [Display(Name = "Song Name:")]

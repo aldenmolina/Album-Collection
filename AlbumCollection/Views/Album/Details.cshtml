@@ -16,13 +16,19 @@
 
     <!-- Section : Details-->
     <section id="details-container">
-        <h1>Album Details</h1>
+        <div class="header-link">
+            <h1>Album Details</h1>
+            <a href="/Album">Back to Albums</a>
+        </div>
         <div class="album-container">
             <div class="album-header">
                 <img src="@Model.ImgPath" />
                 <div class="album-info">
                     <h3>@Model.Name</h3>
                     <p>@Model.ArtistName</p>
+                    <div class="create-link">
+                        <a href="/Song/Create/@Model.AlbumId">Add Song</a>
+                    </div>
                 </div>
             </div>
             <ul class="song-list">

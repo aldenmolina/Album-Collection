@@ -18,6 +18,15 @@ h1 {
     justify-content: space-between;
 }
 
+.header-link a {
+    text-decoration: none;
+    color: white;
+}
+
+.header-link a:hover {
+    text-decoration: underline;
+}
+
 .create-link {
     display: flex;
     flex-direction: column;

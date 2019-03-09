@@ -10,23 +10,28 @@ namespace AlbumCollection.Controllers
 {
     public class SongController : Controller
     {
-        SongRepository songRepo;
-        public SongController(SongRepository songRepo)
+        ISongRepository songRepo;
+        public SongController(ISongRepository songRepo)
         {
             this.songRepo = songRepo;
         }
 
         [HttpGet]
-        public ActionResult Create()
+        public ViewResult Create(int id)
         {
-            return View();
+            var newSong = new Song()
+            {
+                AlbumId = id
+            };
+
+            return View(newSong);
         }
 
         [HttpPost]
         public ActionResult Create(Song song)
         {
             songRepo.Create(song);
-            return RedirectToAction("Index");
+            return RedirectToAction("../Album/Details/" + song.AlbumId);
         }
     }
 }

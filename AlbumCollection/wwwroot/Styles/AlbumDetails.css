@@ -9,6 +9,26 @@ h1 {
     font-size: 3rem;
 }
 
+.create-link {
+    transition: 0.3s ease;
+}
+
+.create-link a {
+    text-decoration: none;
+    color: white;
+    background: orange;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    padding: 0.5rem;  
+    font-size: 0.8rem;
+}
+
+.create-link:hover {
+    margin-left: 0.2rem;
+    transition: 0.3s ease;
+}
+
+
 #details-container {
     margin: 5rem 10rem;
 }
